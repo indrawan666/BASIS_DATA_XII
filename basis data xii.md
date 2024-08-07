@@ -1,4 +1,4 @@
-## 1. Gunakan perintah DESC pegawai; untuk mendapatkan struktur tabel.
+## 1. membuat database company_indrawan.
 *STRUKTUR "*
 SQL
 ```sql
@@ -57,7 +57,7 @@ Jabatan ENUM('Manager', 'Supervisor', 'Staff'),
 ![](assett/database.png)
 
 
-## 2. Gunakan perintah SELECT * FROM pegawai; untuk mendapatkan data.
+## 2. membuat table pegawai  .
 *STRUKTUR "*
 SQL
 ```sql
