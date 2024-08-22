@@ -135,7 +135,7 @@ wai" yang berisi jumlah baris (jumlah pegawai) dalam tabel "pegawai".
 2. "JumlahJabatan" yang berisi jumlah baris (jumlah jabatan) dalam tabel "pegawai".
 
 ### HASIL : 
-![](assett/jumlahpegawai-jumlahjabatan.PNG)
+![](assett/JumlahPegawai-Jumlahjabatan.png)
 
 
 ## jumlah pegawai
