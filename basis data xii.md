@@ -9,7 +9,7 @@ CREATE TABLE pegawai (
 -> JK ENUM('L', 'P') NOT NULL,
 -> Alamat TEXT NOT NULL,
 -> Telp VARCHAR(255) NOT NULL,
-Jabatan ENUM('Manager', 'Supervisor', 'Staff'),
+Jabatan ENUM('Manager', 'Sales', 'Staff'),
     Gaji BIGINT NOT NULL,
     NoCab VARCHAR(255) NOT NULL
 );
@@ -38,7 +38,7 @@ Jabatan ENUM('Manager', 'Supervisor', 'Staff'),
     - NOT NULL menunjukkan bahwa kolom Telp harus diisi, karena informasi kontak pegawai dianggap penting.
 6. **Jabatan**:
     
-    - Tipe data ENUM('Manager', 'Supervisor', 'Staff') dipilih karena jabatan pegawai hanya memiliki tiga kemungkinan.
+    - Tipe data ENUM('Manager', 'sales', 'Staff') dipilih karena jabatan pegawai hanya memiliki tiga kemungkinan.
     - Tidak ada atribut NOT NULL atau NULL, artinya kolom Jabatan boleh diisi atau dibiarkan kosong.
 7. **Gaji**:
     
@@ -135,7 +135,7 @@ wai" yang berisi jumlah baris (jumlah pegawai) dalam tabel "pegawai".
 2. "JumlahJabatan" yang berisi jumlah baris (jumlah jabatan) dalam tabel "pegawai".
 
 ### HASIL : 
-![](assett/jumlahpegawai-jumlahjabatan.png)
+![](assett/jumlahpegawai-jumlahjabatan.PNG)
 
 
 ## jumlah pegawai
@@ -291,7 +291,7 @@ Secara keseluruhan, query ini akan menghasilkan sebuah tabel dengan dua kolom:
 2. Total_Gaji: Mena
 ### HASIL:
 ![](assett/totalgaji.png)
-# Total gaji nocab having SUM
+## Total gaji nocab having SUM
 ### sintaks
 ```sql
 SELECT Nocab, SUM(gaji) AS Total_gaji
@@ -318,7 +318,7 @@ Jadi, query ini akan menghasilkan tabel yang berisi:
 ### HASIL:
 ![](assett/totalgajihavingsum.png)
 
-# select AVG(gaji)
+## select AVG(gaji)
  ### sintaks
 ```sql
 select AVG(gaji) AS Rata_rata -> FROM pegawai;
@@ -337,7 +337,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan satu baris dan satu kolom,
 ### HASIL:
 ![](assett/seletavggaji.png)
 
-# select gaji maneger
+## select gaji maneger
 
 ### sintaks
 ```sql
@@ -360,7 +360,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan satu baris dan satu kolom,
 ![](assett/avggajimaneger.png)
 
 
-# avg ratagaji
+## avg ratagaji
 
 ### sintaks
 ```sql
@@ -384,7 +384,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan dua kolom:
 ### HASIL:
 ![](assett/avgratagaji.png)
 
-# avg ratagaji no cab-no cab
+## avg ratagaji no cab-no cab
 ### sintaks
 ```sql
 SELECT Nocab, AVG(gaji) AS Ratagaji
@@ -410,7 +410,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan dua kolom:
 ### HASIL:
 ![](assett/nocbnocb.png)
 
-# SELECT MAX  Gajiterkecil AS GajiTerbesar
+## SELECT MAX  Gajiterkecil AS GajiTerbesar
 ### sintaks
 ```sql
 SELECT MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
@@ -432,7 +432,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan dua baris dan dua kolom:
 ### HASIL:
 ![](assett/gajikecildanbesar.png)
 
-#  SELEC  MAX Gajiterkecil AS GajiTerbesar manager
+##  SELECT  MAX Gajiterkecil AS GajiTerbesar manager
 ### sintaks
 ```sql
 SELECT MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
@@ -457,7 +457,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan dua baris dan dua kolom:
 ### HASIL:
 ![](assett/gajikecildanbesarmanager.png)
 
-#  SELECT NoCAB, MAX(Gaji) AS GajiTerbesar, MIN(Gaji)
+##  SELECT NoCAB, MAX(Gaji) AS GajiTerbesar, MIN(Gaji)
 ### sintaks
 ```sql
  SELECT NoCAB, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
@@ -481,7 +481,7 @@ Dengan query ini, hasilnya akan berupa tabel yang berisi:
 3. Kolom GajiTerkecil: Nilai gaji terkecil untuk masing-masing cabang.
 ### HASIL:
 ![](assett/gajigajigaji.png)
-# SELECT NoCAB, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) (3)
+## SELECT NoCAB, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) (3)
 ### sintaks
 ```sql
  SELECT NoCAB, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
@@ -509,7 +509,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan tiga kolom:
 
 
 
-# SELECT COUNT(NIP) AS Jumlahpegawai, SUM(Gaji) AS Totalgaji
+## SELECT COUNT(NIP) AS Jumlahpegawai, SUM(Gaji) AS Totalgaji
 
 ### sintaks
 ```sql
@@ -545,7 +545,7 @@ Jadi, query ini akan menghasilkan sebuah tabel dengan 5 kolom:
 ### HASIL:
 ![](assett/nibgajitotalgaji.png)
 
-# SELECT COUNT(NIP) AS Jumlahpegawai, SUM(Gaji) AS Totalgaji,NoCab HAVING SUM(Gaji) <= 2600000 
+## SELECT COUNT(NIP) AS Jumlahpegawai, SUM(Gaji) AS Totalgaji,NoCab HAVING SUM(Gaji) <= 2600000 
 
 ### sintaks
 ```sql
