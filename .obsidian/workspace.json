@@ -11,8 +11,12 @@
             "id": "e93d1d4711ca46de",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "basis data xii.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "basis data xii.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "basis data xii.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "basis data xii.md"
+              }
             }
           }
         ]
@@ -140,8 +148,8 @@
   },
   "active": "e93d1d4711ca46de",
   "lastOpenFiles": [
+    "basisdata_XII.md",
     "basis data xii.md",
-    "Untitled.md",
-    "basisdata_XII.md"
+    "Untitled.md"
   ]
 }
